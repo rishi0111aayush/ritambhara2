@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.studiosbyritumbhara.com/sitemap.xml
+LLMs-txt: https://www.studiosbyritumbhara.com/llms.txt
