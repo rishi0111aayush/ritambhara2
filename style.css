@@ -1248,6 +1248,26 @@ body.menu-open {
     }
 }
 
+/* Enhanced Mobile Responsive */
+@media (max-width: 480px) {
+    .studio-options {
+        justify-content: center;
+    }
+    
+    .studio-chip {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.6rem;
+    }
+    
+    .listing-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}
+
 /* Founder Strip */
 .founder-strip {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
