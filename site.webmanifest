@@ -1,5 +1,5 @@
 {
-  "name": "Studios By Ritumbhara",
+  "name": "Studios by Ritumbhara",
   "short_name": "Studios Jaipur",
   "description": "Premium studio apartment rentals in Jaipur, Rajasthan",
   "start_url": "/",
@@ -8,12 +8,12 @@
   "theme_color": "#1a1a1a",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "founder/logo.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "images/logo.png",
+      "src": "founder/logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
