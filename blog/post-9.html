@@ -32,18 +32,45 @@
 </head>
 <body>
     <header id="header" class="header-solid scrolled">
-        <div class="container nav" style="display: flex; justify-content: space-between;">
-            <a href="../index.html" class="logo"><img src="../images/secon-logo.png" class="logo-img" alt="Studios By Ritumbhara"></a>
-            <div class="menu-toggle" id="mobile-menu"><i data-lucide="menu"></i></div>
-            <ul class="nav-links">
-                <li><a href="../index.html#listings">Stays</a></li>
-                <li><a href="../index.html#why-us">About</a></li>
-                <li><a href="../index.html#reviews">Reviews</a></li>
-                <li><a href="../blog.html">Blog</a></li>
-                <li><a href="https://reservations.hotel-spider.com/03u69e20bdb541a7" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a></li>
-            </ul>
+        <div class="container header-container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="Studios By Ritumbhara" class="logo-img">
+            </a>
+            <nav class="desktop-nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html#listings">Stays</a></li>
+                    <li><a href="../index.html#why-us">About</a></li>
+                    <li><a href="../index.html#reviews">Reviews</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="https://reservations.hotel-spider.com/03u69e20bdb541a7" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                <i data-lucide="menu"></i>
+            </button>
         </div>
     </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <span class="mobile-menu-title">Menu</span>
+            <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="../index.html#listings"><i data-lucide="home"></i> Stays</a></li>
+            <li><a href="../index.html#why-us"><i data-lucide="info"></i> About</a></li>
+            <li><a href="../index.html#reviews"><i data-lucide="star"></i> Reviews</a></li>
+            <li><a href="../blog.html"><i data-lucide="book-open"></i> Blog</a></li>
+            <li class="nav-divider"></li>
+            <li><a href="https://reservations.hotel-spider.com/03u69e20bdb541a7" target="_blank" rel="noopener" class="btn btn-accent"><i data-lucide="calendar"></i> Book Now</a></li>
+        </ul>
+    </div>
     <main>
         <section class="blog-post-header">
             <div class="container">

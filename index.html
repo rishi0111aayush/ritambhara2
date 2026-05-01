@@ -5,50 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studios By Ritumbhara | Premium Studio Stays in Jaipur</title>
-    <meta name="description" content="Serviced Studio Apartment in Jagatpura near Airport — Minimal living, maximum comfort. Clean spaces, calming views, and everything you need for a comfortable stay. Wake up to a peaceful environment designed for relaxation.">
+    <meta name="description" content="Book premium studio apartments in Jaipur starting at ₹1,500/night. Fully furnished, professionally managed, hotel-standard cleaning, 24/7 support & seamless self check-in. Near Jaipur Airport.">
     <meta name="robots" content="index, follow">
-    <meta name="keywords" content="studio apartment Jaipur, short-term rental Jaipur, Airbnb Jaipur, book studio Jaipur, holiday apartment Jaipur, premium stay Jaipur, Studios By Ritumbhara">
+    <meta name="keywords" content="studio apartment Jaipur, short-term rental Jaipur, Airbnb Jaipur, book studio Jaipur, holiday apartment Jaipur, premium stay Jaipur, serviced apartment Jaipur, Jaipur hotel alternative, Jaipur accommodation, Studios By Ritumbhara">
+    <meta name="author" content="Shivam Lohiya">
+    <meta name="geo.region" content="IN-RJ">
+    <meta name="geo.placement" content="Jaipur">
+    <meta name="theme-color" content="#1a1a1a">
     <link rel="canonical" href="https://www.studiosbyritumbhara.com/">
-    <!-- Open Graph -->
+    <link rel="alternate" hreflang="en" href="https://www.studiosbyritumbhara.com/">
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.studiosbyritumbhara.com/">
     <meta property="og:title" content="Studios By Ritumbhara | Premium Studio Stays in Jaipur">
-    <meta property="og:description" content="Serviced Studio Apartment in Jagatpura near Airport — Minimal living, maximum comfort. Clean spaces, calming views, and everything you need for a comfortable stay. Wake up to a peaceful environment designed for relaxation.">
-    <meta property="og:image" content="https://www.studiosbyritumbhara.com/images/hero_bg.png">
+<meta property="og:description" content="Book premium studio apartments in Jaipur. Fully furnished, professionally managed, hotel-standard cleaning & 24/7 support. Starting at ₹1,500/night.">
     <meta property="og:site_name" content="Studios By Ritumbhara">
-    <!-- Twitter Card -->
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.studiosbyritumbhara.com/">
     <meta name="twitter:title" content="Studios By Ritumbhara | Premium Studio Stays in Jaipur">
-    <meta name="twitter:description" content="Serviced Studio Apartment in Jagatpura near Airport — Minimal living, maximum comfort. Clean spaces, calming views, and everything you need for a comfortable stay. Wake up to a peaceful environment designed for relaxation.">
-    <meta name="twitter:image" content="https://www.studiosbyritumbhara.com/images/hero_bg.png">
+    <meta name="twitter:description" content="Book premium studio apartments in Jaipur. Fully furnished, professionally managed, hotel-standard cleaning & 24/7 support. Starting at ₹1,500/night.">
+    <meta name="twitter:image" content="https://www.studiosbyritumbhara.com/images/urban6.png">
+
+    <!-- Favicon - Proper sizes for Google search results -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="images/logo.png">
+    <meta name="msapplication-TileImage" content="images/logo.png">
+    <meta name="msapplication-TileColor" content="#1a1a1a">
+    <link rel="manifest" href="site.webmanifest">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Icons - Async loading -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
 
-    <link rel="stylesheet" href="style.css?v=1.2">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="icon" type="image/png" href="images/logo.png">
-    <link rel="shortcut icon" type="image/png" href="images/logo.png">
-    <link rel="apple-touch-icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css?v=1.5">
+
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="images/urban6.png">
 </head>
 
 <body>
 
-    <!-- Mobile Menu Overlay -->
-    <div class="nav-overlay" id="nav-overlay"></div>
-
     <!-- Header -->
-    <header id="header">
-        <div class="container">
+    <header id="header" role="banner">
+        <div class="container header-container">
             <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Studios By Ritumbhara" class="logo-img">
+                <img src="images/logo.png" alt="Studios By Ritumbhara" class="logo-img" width="65" height="65" loading="eager">
             </a>
-            <nav>
+            <nav class="desktop-nav">
                 <ul class="nav-links">
                     <li><a href="#listings">Stays</a></li>
                     <li><a href="#why-us">About</a></li>
@@ -58,20 +70,43 @@
                     <li><a href="https://reservations.hotel-spider.com/03u69e20bdb541a7" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a></li>
                 </ul>
             </nav>
-            <div class="menu-toggle" id="mobile-menu">
+            <button class="menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
                 <i data-lucide="menu"></i>
-            </div>
+            </button>
         </div>
     </header>
 
+    <!-- Mobile Menu Overlay -->
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <span class="mobile-menu-title">Menu</span>
+            <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#listings"><i data-lucide="home"></i> Stays</a></li>
+            <li><a href="#why-us"><i data-lucide="info"></i> About</a></li>
+            <li><a href="#reviews"><i data-lucide="star"></i> Reviews</a></li>
+            <li><a href="blog.html"><i data-lucide="book-open"></i> Blog</a></li>
+            <li class="nav-divider"></li>
+            <li><a href="partner.html" class="btn btn-primary"><i data-lucide="handshake"></i> Partner With Us</a></li>
+            <li><a href="https://reservations.hotel-spider.com/03u69e20bdb541a7" target="_blank" rel="noopener" class="btn btn-accent"><i data-lucide="calendar"></i> Book Now</a></li>
+        </ul>
+    </div>
+
+    <main id="main-content">
     <!-- Hero -->
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <span class="text-accent" style="font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.9rem;">Jaipur's Finest Studio Stays</span>
-                <h1 class="fade-in" style="margin-top: 1rem;">Where <span class="text-accent">Elegance</span> Meets<br>Everyday Comfort</h1>
+                <span class="text-accent hero-tagline">Jaipur's Finest Studio Stays</span>
+                <h1 class="fade-in">Where <span class="text-accent">Elegance</span> Meets<br>Everyday Comfort</h1>
                 <p class="fade-in">Thoughtfully designed spaces that feel like home — only better. Discover Jaipur's finest studio stays curated for the modern traveler.</p>
-                <div class="fade-in" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+                <div class="fade-in hero-buttons">
                     <a href="https://reservations.hotel-spider.com/03u69e20bdb541a7" target="_blank" rel="noopener" class="btn btn-primary">Book Now — Best Rate</a>
                     <a href="#listings" class="btn btn-outline">Browse Stays</a>
                 </div>
@@ -372,7 +407,9 @@
             <div class="blog-grid">
                 <article class="blog-card">
                     <a href="blog/post-1.html">
-                        <div class="blog-card-img" style="background-image: url('images/blog1.png');"></div>
+                        <div class="blog-card-img-wrapper">
+                            <div class="blog-card-img" style="background-image: url('images/blog1.png');"></div>
+                        </div>
                         <div class="blog-card-content">
                             <span class="blog-category">Real Estate</span>
                             <h3 class="blog-card-title">Why Studio Apartments are the Future in Jaipur</h3>
@@ -383,7 +420,9 @@
                 </article>
                 <article class="blog-card">
                     <a href="blog/post-6.html">
-                        <div class="blog-card-img" style="background-image: url('images/blog6.png');"></div>
+                        <div class="blog-card-img-wrapper">
+                            <div class="blog-card-img" style="background-image: url('images/blog6.png');"></div>
+                        </div>
                         <div class="blog-card-content">
                             <span class="blog-category">Trends</span>
                             <h3 class="blog-card-title">The Rise of Business Travelers in Jaipur</h3>
@@ -394,7 +433,9 @@
                 </article>
                 <article class="blog-card">
                     <a href="blog/post-8.html">
-                        <div class="blog-card-img" style="background-image: url('images/blog1.png');"></div>
+                        <div class="blog-card-img-wrapper">
+                            <div class="blog-card-img" style="background-image: url('images/blog1.png');"></div>
+                        </div>
                         <div class="blog-card-content">
                             <span class="blog-category">Hospitality</span>
                             <h3 class="blog-card-title">Creating Memorable Guest Experiences</h3>
@@ -408,20 +449,20 @@
     </section>
 
 <!-- Founder Section -->
-    <section class="listings fade-in" style="background-color: #e8e6e1;">
+    <section class="founder-section">
         <div class="container">
-            <div class="text-center" style="margin-bottom: 3rem;">
-                <span class="text-accent" style="font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.9rem;">Meet the Founder</span>
-                <h2 style="font-size: 2.5rem; margin-top: 0.8rem;">Shivam Lohiya</h2>
+            <div class="founder-header">
+                <span class="text-accent">Meet the Founder</span>
+                <h2>Shivam Lohiya</h2>
             </div>
-            <div style="display: flex; align-items: center; justify-content: center; gap: 4rem; max-width: 1000px; margin: 0 auto;">
-                <div style="flex-shrink: 0;">
-                    <img src="images/founder-image.png" alt="Shivam Lohiya" style="width: 250px; height: 250px; border-radius: 16px; object-fit: cover; box-shadow: 0 15px 40px rgba(0,0,0,0.12);">
+            <div class="founder-content">
+                <div class="founder-image-wrapper">
+                    <img src="images/founder-image.png" alt="Shivam Lohiya" class="founder-image">
                 </div>
-                <div style="flex: 1; max-width: 500px;">
-                    <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8; margin-bottom: 1rem;">The visionary behind Studios By Ritumbhara. With a passion for hospitality and real estate, Shivam has transformed how guests experience Jaipur.</p>
-                    <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.8; margin-bottom: 1.5rem;">Today, Studios By Ritumbhara stands as one of Jaipur's most trusted names in premium short-term stays, known for exceptional cleanliness, seamless check-in, and unforgettable guest experiences.</p>
-                    <a href="https://wa.me/919503002629" target="_blank" rel="noopener" class="btn btn-primary">Connect with Shivam</a>
+                <div class="founder-info">
+                    <p>The visionary behind Studios By Ritumbhara. With a passion for hospitality and real estate, Shivam has transformed how guests experience Jaipur.</p>
+                    <p>Today, Studios By Ritumbhara stands as one of Jaipur's most trusted names in premium short-term stays, known for exceptional cleanliness, seamless check-in, and unforgettable guest experiences.</p>
+                    <a href="https://wa.me/919503002629" target="_blank" rel="noopener" class="btn btn-primary founder-btn">Connect with Shivam</a>
                 </div>
             </div>
         </div>
@@ -471,9 +512,10 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
-    <footer>
+    <footer role="contentinfo">
         <div class="container footer-grid">
             <div>
                 <img src="images/logo.png" alt="Studios By Ritumbhara" class="footer-logo-img">
@@ -525,9 +567,18 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script>
-        lucide.createIcons();
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+        });
+        window.addEventListener('load', function() {
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+        });
     </script>
 
     <!-- JSON-LD Structured Data -->
@@ -536,10 +587,88 @@
       "@context": "https://schema.org",
       "@type": "LodgingBusiness",
       "name": "Studios By Ritumbhara",
-      "description": "Premium, professionally managed studio apartments for short-term stays in Jaipur, Rajasthan.",
+      "description": "Premium, professionally managed studio apartments for short-term stays in Jaipur, Rajasthan. Book serviced apartments near Jaipur Airport with hotel-standard cleaning, 24/7 support, and seamless self check-in.",
       "url": "https://www.studiosbyritumbhara.com",
       "logo": "https://www.studiosbyritumbhara.com/images/logo.png",
-      "image": "https://www.studiosbyritumbhara.com/images/hero_bg.png",
+      "image": "https://www.studiosbyritumbhara.com/images/urban6.png",
+      "telephone": "+919503002629",
+      "email": "studios.jaipur@gmail.com",
+      "priceRange": "₹1,500 - ₹5,000",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jaipur",
+        "addressRegion": "Rajasthan",
+        "addressCountry": "IN",
+        "postalCode": "302017"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "26.8281",
+        "longitude": "75.8024"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/studiosbyritumbhara/",
+        "https://www.instagram.com/studiosbyritumbhara"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Shivam Lohiya"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "134",
+        "bestRating": "5"
+      },
+      "starRating": {
+        "@type": "Rating",
+        "ratingValue": "4.8"
+      },
+      "amenityFeature": [
+        {"@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Self Check-in", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "24/7 Guest Support", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Housekeeping", "value": true}
+      ],
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": "https://reservations.hotel-spider.com/03u69e20bdb541a7"
+      }
+    }
+    </script>
+
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Studios By Ritumbhara",
+      "url": "https://www.studiosbyritumbhara.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.studiosbyritumbhara.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Studios By Ritumbhara",
+      "url": "https://www.studiosbyritumbhara.com",
+      "logo": "https://www.studiosbyritumbhara.com/images/logo.png",
+      "description": "Premium studio apartment rentals in Jaipur, Rajasthan",
       "telephone": "+919503002629",
       "email": "studios.jaipur@gmail.com",
       "address": {
@@ -548,17 +677,9 @@
         "addressRegion": "Rajasthan",
         "addressCountry": "IN"
       },
-      "sameAs": ["https://www.linkedin.com/company/studiosbyritumbhara/"],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "134"
-      },
-      "amenityFeature": [
-        {"@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true},
-        {"@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true},
-        {"@type": "LocationFeatureSpecification", "name": "Self Check-in", "value": true},
-        {"@type": "LocationFeatureSpecification", "name": "24/7 Guest Support", "value": true}
+      "sameAs": [
+        "https://www.linkedin.com/company/studiosbyritumbhara/",
+        "https://www.instagram.com/studiosbyritumbhara"
       ]
     }
     </script>
