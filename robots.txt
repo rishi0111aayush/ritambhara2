@@ -1,5 +1,17 @@
 User-agent: *
 Allow: /
 
+# Crawl-delay for politeness
+Crawl-delay: 1
+
 Sitemap: https://www.studiosbyritumbhara.com/sitemap.xml
 LLMs-txt: https://www.studiosbyritumbhara.com/llms.txt
+
+# Block unnecessary directories (if any)
+# Disallow: /private/
+# Disallow: /cgi-bin/
+
+# Common crawl budget optimization
+Disallow: /*?utm_source=
+Disallow: /*?utm_medium=
+Disallow: /*?utm_campaign=

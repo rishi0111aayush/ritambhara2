@@ -5,14 +5,14 @@
     <url>
         <loc>https://www.studiosbyritumbhara.com/</loc>
         <lastmod>2026-05-01</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://www.studiosbyritumbhara.com/portfolio.html</loc>
         <lastmod>2026-05-01</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://www.studiosbyritumbhara.com/blog.html</loc>
@@ -27,12 +27,30 @@
         <priority>0.8</priority>
     </url>
 
-    <!-- LLMs -->
+    <!-- Property Pages (for SEO targeting) -->
     <url>
-        <loc>https://www.studiosbyritumbhara.com/llms.txt</loc>
+        <loc>https://www.studiosbyritumbhara.com/#listings</loc>
         <lastmod>2026-05-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.studiosbyritumbhara.com/#ashadeep</loc>
+        <lastmod>2026-05-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.studiosbyritumbhara.com/#wonder-megacity</loc>
+        <lastmod>2026-05-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.studiosbyritumbhara.com/#urban-suites</loc>
+        <lastmod>2026-05-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
 
     <!-- Blog Posts -->
@@ -40,61 +58,69 @@
         <loc>https://www.studiosbyritumbhara.com/blog/post-1.html</loc>
         <lastmod>2026-05-01</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://www.studiosbyritumbhara.com/blog/post-2.html</loc>
         <lastmod>2026-05-01</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://www.studiosbyritumbhara.com/blog/post-3.html</loc>
         <lastmod>2026-05-01</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://www.studiosbyritumbhara.com/blog/post-4.html</loc>
         <lastmod>2026-05-01</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://www.studiosbyritumbhara.com/blog/post-5.html</loc>
         <lastmod>2026-05-01</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://www.studiosbyritumbhara.com/blog/post-6.html</loc>
         <lastmod>2026-05-01</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://www.studiosbyritumbhara.com/blog/post-7.html</loc>
         <lastmod>2026-05-01</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://www.studiosbyritumbhara.com/blog/post-8.html</loc>
         <lastmod>2026-05-01</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://www.studiosbyritumbhara.com/blog/post-9.html</loc>
         <lastmod>2026-05-01</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://www.studiosbyritumbhara.com/blog/post-10.html</loc>
         <lastmod>2026-05-01</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- LLMs.txt for AI -->
+    <url>
+        <loc>https://www.studiosbyritumbhara.com/llms.txt</loc>
+        <lastmod>2026-05-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
     </url>
 
 </urlset>

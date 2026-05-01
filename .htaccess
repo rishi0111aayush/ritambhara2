@@ -55,3 +55,20 @@
   Header unset ETag
 </IfModule>
 FileETag None
+
+# SEO: Security Headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "geolocation=(), microphone=()"
+</IfModule>
+
+# SEO: Prevent duplicate content with trailing slash
+<IfModule mod_rewrite.c>
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteCond %{REQUEST_URI} !\.
+  RewriteRule ^(.*)$ https://www.studiosbyritumbhara.com/$1/ [L,R=301]
+</IfModule>
