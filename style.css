@@ -328,13 +328,11 @@ p {
 .logo-img {
     height: 65px;
     width: auto;
-    filter: brightness(0) invert(1);
     transition: all 0.3s ease;
 }
 
 header.scrolled .logo-img,
 header.header-solid .logo-img {
-    filter: brightness(0);
     height: 55px;
 }
 
