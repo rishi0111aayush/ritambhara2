@@ -323,17 +323,32 @@ p {
     color: var(--primary);
     display: flex;
     align-items: center;
+    gap: 0.5rem;
 }
 
 .logo-img {
-    height: 65px;
+    height: 70px;
     width: auto;
+    object-fit: contain;
     transition: all 0.3s ease;
 }
 
 header.scrolled .logo-img,
 header.header-solid .logo-img {
-    height: 55px;
+    height: 58px;
+}
+
+.footer-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.footer-logo-img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
 }
 
 /* Header/Nav */
