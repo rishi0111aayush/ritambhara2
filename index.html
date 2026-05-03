@@ -405,17 +405,17 @@
     <!-- Blog -->
     <section class="blog-home fade-in" id="blog">
         <div class="container">
-            <div class="flex-header" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem;">
-                <div>
-                    <span class="text-accent" style="font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.9rem;">Travel Guides</span>
-                    <h2 style="font-size: 2.8rem; margin-top: 1rem;">Jaipur Travel Tips</h2>
+            <div class="blog-header-center">
+                <span class="text-accent" style="font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.9rem; display: block; text-align: center; margin-bottom: 0.5rem;">Travel Guides</span>
+                <h2 style="font-size: 2.8rem; text-align: center; margin-bottom: 1.5rem;">Jaipur Travel Tips</h2>
+                <div style="text-align: center;">
+                    <a href="blog.html" class="btn btn-primary">View All Articles</a>
                 </div>
-                <a href="blog.html" class="btn btn-primary">View All Articles</a>
             </div>
 
             <div class="blog-grid">
                 <article class="blog-card">
-                    <a href="blog/post-1.html">
+                    <a href="blog/post-1.html" onclick="window.location.href='blog/post-1.html'; return false;">
                         <div class="blog-card-img-wrapper">
                             <div class="blog-card-img" style="background-image: url('images/blog1.png');"></div>
                         </div>
@@ -423,7 +423,7 @@
                             <span class="blog-category">Real Estate</span>
                             <h3 class="blog-card-title">Why Studio Apartments are the Future in Jaipur</h3>
                             <p class="blog-card-excerpt">Discover why studio apartments are the preferred stay for modern travelers in Jaipur.</p>
-                            <span class="blog-read-more">Read Article <i data-lucide="arrow-right" size="16"></i></span>
+                            <span class="blog-read-more" style="pointer-events: auto;">Read Article <i data-lucide="arrow-right" size="16"></i></span>
                         </div>
                     </a>
                 </article>
@@ -478,14 +478,14 @@
     </section>
 
     <!-- Book CTA -->
-    <section id="contact" style="background-color: var(--primary); color: white; text-align: center; padding: 120px 0;">
-        <div class="container">
-            <span style="color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.9rem;">Ready to Book?</span>
-            <h2 style="font-size: 3.5rem; margin: 1.5rem 0 2rem;">Your ideal Jaipur stay<br>is one click away</h2>
-            <p style="font-size: 1.2rem; opacity: 0.7; max-width: 600px; margin: 0 auto 3rem;">Browse our fully furnished, professionally managed studios. All in prime Jaipur locations.</p>
-            <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; width: 100%; max-width: 320px; margin: 0 auto;">
-                <a href="https://reservations.hotel-spider.com/03u69e20bdb541a7" target="_blank" rel="noopener" class="btn btn-primary">Book Now — Best Rate</a>
-                <a href="https://wa.me/919503002629" target="_blank" rel="noopener" class="btn btn-outline" style="border-color: rgba(255,255,255,0.5); color: white;">WhatsApp Us</a>
+    <section id="cta-section" style="background-color: var(--primary); color: white; padding: 100px 20px;">
+        <div class="cta-content" style="max-width: 700px; margin: 0 auto; text-align: center;">
+            <span style="color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; font-size: 0.9rem; display: block; margin-bottom: 1rem;">Ready to Book?</span>
+            <h2 style="font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.2; margin-bottom: 1.5rem;">Your ideal Jaipur stay<br>is one click away</h2>
+            <p style="font-size: 1.1rem; opacity: 0.8; max-width: 500px; margin: 0 auto 2.5rem; line-height: 1.6;">Browse our fully furnished, professionally managed studios. All in prime Jaipur locations.</p>
+            <div class="cta-buttons" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <a href="https://reservations.hotel-spider.com/03u69e20bdb541a7" target="_blank" rel="noopener" class="btn btn-cta-primary">Book Now — Best Rate</a>
+                <a href="https://wa.me/919503002629" target="_blank" rel="noopener" class="btn btn-cta-outline">WhatsApp Us</a>
             </div>
         </div>
     </section>
