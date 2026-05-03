@@ -1278,9 +1278,8 @@ body.menu-open {
     }
 
     .logo-img {
-        height: 40px !important;
+        height: 50px !important;
         width: auto !important;
-        filter: brightness(0) !important;
     }
 
     /* Hide desktop nav on mobile */
@@ -1827,7 +1826,7 @@ body.menu-open {
 
     .footer-logo-img {
         margin: 0 auto 0.75rem;
-        height: 36px;
+        height: 44px;
     }
 
     .footer-grid > div:first-child p {
@@ -2110,7 +2109,7 @@ body.menu-open {
     }
 
     .footer-logo-img {
-        height: 32px;
+        height: 40px;
     }
 
     .social-icon {
