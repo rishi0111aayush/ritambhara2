@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Studios by Ritumbhara</title>
+    <meta name="description" content="Contact Studios by Ritumbhara - Phone, email, address in Rajasthan.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1a1a1a">
+    <link rel="canonical" href="https://www.studiosbyritumbhara.com/contact.html">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <link rel="stylesheet" href="style.css?v=1.7">
+    <style>
+        :root { --primary: #1a1a1a; --accent: #E11D48; --text-main: #1a1a1a; --text-muted: #6b7280; --bg-light: #FAFAF9; --border-light: #E5E5E5; --white: #FFFFFF; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Outfit', sans-serif; line-height: 1.6; color: var(--text-main); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
+        .btn-primary { background: var(--accent); color: white; }
+        .btn-primary:hover { background: #BE123C; }
+        .btn-outline { border: 2px solid var(--text-main); color: var(--text-main); background: transparent; }
+        .btn-outline:hover { background: var(--text-main); color: white; }
+        .header { background: var(--white); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 100; }
+        .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 15px 0; }
+        .logo-img { width: 60px; height: 60px; }
+        .nav-links { display: flex; align-items: center; gap: 30px; list-style: none; }
+        .nav-links a { text-decoration: none; color: var(--text-main); font-weight: 500; font-size: 0.95rem; }
+        .nav-links a:hover { color: var(--accent); }
+        .mobile-toggle { display: none; background: none; border: none; cursor: pointer; }
+        .page-hero { background: var(--primary); color: white; padding: 80px 0; text-align: center; }
+        .page-hero h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 15px 0; }
+        .page-hero p { color: rgba(255,255,255,0.7); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+        .breadcrumb { background: var(--bg-light); padding: 15px 0; font-size: 0.9rem; }
+        .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+        .breadcrumb span { color: var(--text-muted); margin: 0 8px; }
+        .contact-section { padding: 60px 0; }
+        .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin-bottom: 50px; }
+        .contact-card { background: var(--white); border: 1px solid var(--border-light); border-radius: 16px; padding: 35px; text-align: center; transition: all 0.3s; }
+        .contact-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .contact-card .icon-box { background: var(--bg-light); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
+        .contact-card h3 { font-size: 1.2rem; margin-bottom: 10px; }
+        .contact-card p { color: var(--text-muted); margin-bottom: 15px; font-size: 0.95rem; }
+        .contact-card a { color: var(--accent); font-weight: 600; font-size: 1.1rem; }
+        .address-section { background: var(--bg-light); padding: 60px 0; }
+        .address-card { background: var(--white); border-radius: 16px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .address-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .address-info { display: flex; gap: 20px; }
+        .address-info .icon-box { background: var(--accent); width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .address-info h3 { margin-bottom: 10px; }
+        .address-info p { color: var(--text-muted); line-height: 1.8; }
+        .business-details { margin-top: 30px; padding-top: 30px; border-top: 1px solid var(--border-light); }
+        .business-details p { margin-bottom: 10px; color: var(--text-muted); }
+        .business-details strong { color: var(--text-main); }
+        .action-buttons { display: flex; gap: 15px; margin-top: 30px; flex-wrap: wrap; }
+        .form-section { padding: 60px 0; }
+        .form-card { background: var(--white); border: 1px solid var(--border-light); border-radius: 16px; padding: 40px; max-width: 600px; margin: 0 auto; }
+        .form-card h2 { text-align: center; margin-bottom: 10px; }
+        .form-card .form-subtitle { text-align: center; color: var(--text-muted); margin-bottom: 30px; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 14px 16px; border: 1px solid var(--border-light); border-radius: 8px; font-size: 1rem; font-family: inherit; transition: border-color 0.3s; }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--accent); }
+        .social-section { background: var(--primary); color: white; padding: 60px 0; text-align: center; }
+        .social-section h2 { font-size: 2rem; margin-bottom: 15px; }
+        .social-section p { opacity: 0.7; margin-bottom: 25px; }
+        .social-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        .footer { background: var(--bg-light); padding: 50px 0 20px; border-top: 1px solid var(--border-light); }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer h4 { font-size: 1rem; margin-bottom: 20px; color: var(--text-main); text-transform: uppercase; letter-spacing: 1px; }
+        .footer ul { list-style: none; }
+        .footer li { margin-bottom: 12px; }
+        .footer a { color: var(--text-muted); text-decoration: none; font-size: 0.95rem; }
+        .footer a:hover { color: var(--accent); }
+        .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid var(--border-light); color: var(--text-muted); font-size: 0.9rem; }
+        @media (max-width: 1024px) { .footer-grid { grid-template-columns: 1fr 1fr; } .contact-grid { grid-template-columns: 1fr; } .address-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .mobile-toggle { display: block; }
+            .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+            .form-card { padding: 30px 20px; }
+            .page-hero { padding: 60px 0; }
+            .action-buttons { flex-direction: column; }
+            .action-buttons .btn { width: 100%; }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html"><img src="images/logo2.png" alt="Studios By Ritumbhara" class="logo-img"></a>
+            <ul class="nav-links">
+                <li><a href="index.html#listings">Stays</a></li>
+                <li><a href="index.html#why-us">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="partner.html">Partner</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Book Now</a></li>
+            </ul>
+            <button class="mobile-toggle"><i data-lucide="menu"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem;">Contact Us</p>
+                <h1>Get in Touch</h1>
+                <p>We'd love to hear from you.</p>
+            </div>
+        </section>
+
+        <div class="breadcrumb">
+            <div class="container">
+                <a href="index.html">Home</a><span>›</span>Contact Us
+            </div>
+        </div>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="icon-box"><i data-lucide="phone" size="28" style="color:var(--accent);"></i></div>
+                        <h3>Phone</h3>
+                        <p>Call or WhatsApp us anytime</p>
+                        <a href="tel:9503002629">+91 9503002629</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="icon-box"><i data-lucide="mail" size="28" style="color:var(--accent);"></i></div>
+                        <h3>Email</h3>
+                        <p>We'll respond within 24 hours</p>
+                        <a href="mailto:studios.jaipur@gmail.com">studios.jaipur@gmail.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="icon-box"><i data-lucide="message-circle" size="28" style="color:var(--accent);"></i></div>
+                        <h3>WhatsApp</h3>
+                        <p>Quick chat for instant responses</p>
+                        <a href="https://wa.me/919503002629" target="_blank">Message Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="address-section">
+            <div class="container">
+                <h2 style="text-align:center;margin-bottom:40px;font-size:2rem;">Our Address</h2>
+                <div class="address-card">
+                    <div class="address-grid">
+                        <div>
+                            <div class="address-info">
+                                <div class="icon-box"><i data-lucide="map-pin" size="24" style="color:white;"></i></div>
+                                <div>
+                                    <h3>Studios By Ritumbhara</h3>
+                                    <p>
+                                        ASHADEEP RAINBOW, Studios<br>
+                                        Karolan Ka Barh<br>
+                                        Jeerota, Rajasthan 303905<br>
+                                        India
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="business-details">
+                                <p><strong>Business Name:</strong> Studios By Ritumbhara</p>
+                                <p><strong>PIN Code:</strong> 303905</p>
+                                <p><strong>State:</strong> Rajasthan, India</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="action-buttons">
+                                <a href="https://wa.me/919503002629" target="_blank" class="btn btn-primary">
+                                    <i data-lucide="message-circle" style="margin-right:8px;"></i> WhatsApp
+                                </a>
+                                <a href="tel:9503002629" class="btn btn-outline">
+                                    <i data-lucide="phone" style="margin-right:8px;"></i> Call Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="container">
+                <div class="form-card">
+                    <h2>Send us a Message</h2>
+                    <p class="form-subtitle">Have a question? Fill out the form below.</p>
+                    <form>
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <select>
+                                <option value="">Select a topic</option>
+                                <option value="booking">Booking Inquiry</option>
+                                <option value="cancellation">Cancellation/Refund</option>
+                                <option value="property">Property Partnership</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea rows="5" placeholder="Your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-section">
+            <div class="container">
+                <h2>Follow us on social media</h2>
+                <p>Stay updated with our latest properties and offers.</p>
+                <div class="social-buttons">
+                    <a href="https://www.instagram.com/studiosbyritumbhara" target="_blank" class="btn btn-primary">
+                        <i data-lucide="instagram" style="margin-right:8px;"></i> Instagram
+                    </a>
+                    <a href="https://www.linkedin.com/company/studiosbyritumbhara/" target="_blank" class="btn btn-outline" style="border-color:white;color:white;">
+                        <i data-lucide="linkedin" style="margin-right:8px;"></i> LinkedIn
+                    </a>
+                    <a href="https://www.facebook.com/share/1DHvXNML6p/" target="_blank" class="btn btn-outline" style="border-color:white;color:white;">
+                        <i data-lucide="facebook" style="margin-right:8px;"></i> Facebook
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="images/logo2.png" alt="Studios By Ritumbhara" style="width:80px; margin-bottom:15px;">
+                    <p style="color:var(--text-muted);line-height:1.7;">Premium studio stays in Jaipur. Professionally managed, fully furnished, always 5-star ready.</p>
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html#listings">Browse Stays</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="partner.html">Partner</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                        <li><a href="refund.html">Refund</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="tel:9503002629">+91 9503002629</a></li>
+                        <li><a href="mailto:studios.jaipur@gmail.com">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Studios By Ritumbhara. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() { if (window.lucide) lucide.createIcons(); });
+    </script>
+</body>
+
+</html>

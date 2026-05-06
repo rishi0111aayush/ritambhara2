@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions | Studios by Ritumbhara</title>
+    <meta name="description" content="Terms and Conditions for Studios by Ritumbhara - Premium studio apartments in Jaipur.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1a1a1a">
+    <link rel="canonical" href="https://www.studiosbyritumbhara.com/terms.html">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <link rel="stylesheet" href="style.css?v=1.7">
+    <style>
+        :root { --primary: #1a1a1a; --accent: #E11D48; --text-main: #1a1a1a; --text-muted: #6b7280; --bg-light: #FAFAF9; --border-light: #E5E5E5; --white: #FFFFFF; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Outfit', sans-serif; line-height: 1.6; color: var(--text-main); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
+        .btn-primary { background: var(--accent); color: white; }
+        .btn-primary:hover { background: #BE123C; }
+        .header { background: var(--white); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 100; }
+        .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 15px 0; }
+        .logo-img { width: 60px; height: 60px; }
+        .nav-links { display: flex; align-items: center; gap: 30px; list-style: none; }
+        .nav-links a { text-decoration: none; color: var(--text-main); font-weight: 500; font-size: 0.95rem; }
+        .nav-links a:hover { color: var(--accent); }
+        .mobile-toggle { display: none; background: none; border: none; cursor: pointer; }
+        .page-hero { background: var(--primary); color: white; padding: 80px 0; text-align: center; }
+        .page-hero h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 15px 0; }
+        .page-hero p { color: rgba(255,255,255,0.7); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+        .breadcrumb { background: var(--bg-light); padding: 15px 0; font-size: 0.9rem; }
+        .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+        .breadcrumb span { color: var(--text-muted); margin: 0 8px; }
+        .content-section { padding: 60px 0; }
+        .policy-card { background: var(--white); border: 1px solid var(--border-light); border-radius: 16px; padding: 40px; margin-bottom: 30px; }
+        .policy-card h2 { color: var(--text-main); font-size: 1.5rem; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid var(--accent); display: inline-block; }
+        .policy-card h3 { font-size: 1.2rem; margin: 30px 0 15px; color: var(--text-main); }
+        .policy-card p { color: var(--text-muted); margin-bottom: 15px; line-height: 1.8; }
+        .policy-card ul { margin: 15px 0 15px 25px; }
+        .policy-card li { color: var(--text-muted); margin-bottom: 10px; line-height: 1.7; }
+        .term-item { background: var(--bg-light); padding: 20px 25px; border-radius: 10px; margin-bottom: 15px; display: flex; align-items: flex-start; gap: 15px; }
+        .term-item .number { background: var(--accent); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; }
+        .term-item p { margin: 0; }
+        .cta-section { background: var(--primary); color: white; padding: 60px 0; text-align: center; }
+        .cta-section h2 { font-size: 2rem; margin-bottom: 15px; }
+        .cta-section p { opacity: 0.7; margin-bottom: 25px; }
+        .footer { background: var(--bg-light); padding: 50px 0 20px; border-top: 1px solid var(--border-light); }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer h4 { font-size: 1rem; margin-bottom: 20px; color: var(--text-main); text-transform: uppercase; letter-spacing: 1px; }
+        .footer ul { list-style: none; }
+        .footer li { margin-bottom: 12px; }
+        .footer a { color: var(--text-muted); text-decoration: none; font-size: 0.95rem; }
+        .footer a:hover { color: var(--accent); }
+        .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid var(--border-light); color: var(--text-muted); font-size: 0.9rem; }
+        .last-updated { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 30px; }
+        @media (max-width: 1024px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .mobile-toggle { display: block; }
+            .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+            .policy-card { padding: 25px; }
+            .term-item { flex-direction: column; gap: 10px; }
+            .page-hero { padding: 60px 0; }
+            .term-item .number { width: 28px; height: 28px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html"><img src="images/logo2.png" alt="Studios By Ritumbhara" class="logo-img"></a>
+            <ul class="nav-links">
+                <li><a href="index.html#listings">Stays</a></li>
+                <li><a href="index.html#why-us">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="partner.html">Partner</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Book Now</a></li>
+            </ul>
+            <button class="mobile-toggle"><i data-lucide="menu"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem;">Legal</p>
+                <h1>Terms & Conditions</h1>
+                <p>Please read our terms and conditions carefully before using our services.</p>
+            </div>
+        </section>
+
+        <div class="breadcrumb">
+            <div class="container">
+                <a href="index.html">Home</a><span>›</span>Terms & Conditions
+            </div>
+        </div>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="policy-card">
+                    <p class="last-updated">Last updated: May 2026</p>
+
+                    <h2>Welcome to Studios By Ritumbhara</h2>
+                    <p>By using our website and booking our services, you agree to the following terms and conditions. Please read them carefully before making any booking.</p>
+
+                    <h3>Booking Terms</h3>
+                    <div class="term-item">
+                        <span class="number">1</span>
+                        <p><strong>All bookings are subject to availability.</strong> We recommend confirming your reservation in advance to secure your preferred dates and property.</p>
+                    </div>
+                    <div class="term-item">
+                        <span class="number">2</span>
+                        <p><strong>Guests must provide valid identification at check-in.</strong> Government-issued ID proof is required for all adult guests staying at the property.</p>
+                    </div>
+                    <div class="term-item">
+                        <span class="number">3</span>
+                        <p><strong>Any damage to property will be chargeable.</strong> Guests are liable for any damage caused to the property or fixtures during their stay.</p>
+                    </div>
+                    <div class="term-item">
+                        <span class="number">4</span>
+                        <p><strong>Check-in and check-out timings must be followed strictly.</strong> Standard check-in is from 2:00 PM and check-out is by 11:00 AM unless otherwise arranged.</p>
+                    </div>
+                    <div class="term-item">
+                        <span class="number">5</span>
+                        <p><strong>The management reserves the right to refuse service in case of misconduct.</strong> We maintain a zero-tolerance policy for any illegal or disruptive activities.</p>
+                    </div>
+
+                    <h3>Additional Terms</h3>
+                    <ul>
+                        <li>Bookings are confirmed only after payment verification</li>
+                        <li>Guests must comply with all house rules during their stay</li>
+                        <li>Maximum occupancy limits must be adhered to</li>
+                        <li>Quiet hours must be respected (10:00 PM - 7:00 AM)</li>
+                        <li>No pets allowed unless specifically approved</li>
+                    </ul>
+
+                    <h3>Governing Law</h3>
+                    <p>These terms and conditions are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of courts in Rajasthan, India.</p>
+
+                    <h3>Contact Information</h3>
+                    <p>For questions about these terms, please contact us at:</p>
+                    <ul>
+                        <li><strong>Email:</strong> studios.jaipur@gmail.com</li>
+                        <li><strong>Phone:</strong> +91 9503002629</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to book your stay?</h2>
+                <p>Experience premium studio living in Rajasthan.</p>
+                <a href="https://reservations.hotel-spider.com/03u69e20bdb541a7" target="_blank" class="btn btn-primary">Book Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="images/logo2.png" alt="Studios By Ritumbhara" style="width:80px; margin-bottom:15px;">
+                    <p style="color:var(--text-muted);line-height:1.7;">Premium studio stays in Jaipur. Professionally managed, fully furnished, always 5-star ready.</p>
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html#listings">Browse Stays</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="partner.html">Partner</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                        <li><a href="refund.html">Refund</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="tel:9503002629">+91 9503002629</a></li>
+                        <li><a href="mailto:studios.jaipur@gmail.com">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Studios By Ritumbhara. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() { if (window.lucide) lucide.createIcons(); });
+    </script>
+</body>
+
+</html>
