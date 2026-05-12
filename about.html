@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Studios by Ritumbhara</title>
-    <meta name="description" content="About Studios by Ritumbhara - Premium studio apartment rentals in Rajasthan.">
+    <title>About Us | LILACMOSAIC TECHNOLOGIES PRIVATE LIMITED</title>
+    <meta name="description" content="About LILACMOSAIC TECHNOLOGIES PRIVATE LIMITED - Premium studio apartment rentals in Rajasthan.">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#1a1a1a">
     <link rel="canonical" href="https://www.studiosbyritumbhara.com/about.html">
@@ -24,13 +24,13 @@
     <script src="https://unpkg.com/lucide@latest" defer></script>
     <link rel="stylesheet" href="style.css?v=1.7">
     <style>
-        :root { --primary: #1a1a1a; --accent: #E11D48; --text-main: #1a1a1a; --text-muted: #6b7280; --bg-light: #FAFAF9; --border-light: #E5E5E5; --white: #FFFFFF; }
+        :root { --primary: #1a1a1a; --accent: #E11D48; --text-main: #1a1a1a; --text-muted: #6b7280; --bg-light: #FAFAF9; --border-light: #E5E5E5; --white: #FFFFFF; --accent-light: rgba(225, 29, 72, 0.1); }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Outfit', sans-serif; line-height: 1.6; color: var(--text-main); }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         .btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
         .btn-primary { background: var(--accent); color: white; }
-        .btn-primary:hover { background: #BE123C; }
+        .btn-primary:hover { background: #BE123C; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(225, 29, 72, 0.3); }
         .header { background: var(--white); border-bottom: 1px solid var(--border-light); position: sticky; top: 0; z-index: 100; }
         .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 15px 0; }
         .logo-img { width: 60px; height: 60px; }
@@ -38,49 +38,109 @@
         .nav-links a { text-decoration: none; color: var(--text-main); font-weight: 500; font-size: 0.95rem; }
         .nav-links a:hover { color: var(--accent); }
         .mobile-toggle { display: none; background: none; border: none; cursor: pointer; }
-        .page-hero { background: var(--primary); color: white; padding: 80px 0; text-align: center; }
-        .page-hero h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 15px 0; }
-        .page-hero p { color: rgba(255,255,255,0.7); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
-        .breadcrumb { background: var(--bg-light); padding: 15px 0; font-size: 0.9rem; }
-        .breadcrumb a { color: var(--text-muted); text-decoration: none; }
-        .breadcrumb span { color: var(--text-muted); margin: 0 8px; }
-        .about-section { padding: 80px 0; }
+        
+        .page-hero { background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%); color: white; padding: 100px 0; text-align: center; position: relative; overflow: hidden; }
+        .page-hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23E11D48' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); opacity: 0.5; }
+        .page-hero .container { position: relative; z-index: 1; }
+        .page-hero .hero-tag { display: inline-block; background: rgba(225, 29, 72, 0.15); color: #E11D48; padding: 8px 20px; border-radius: 50px; font-size: 0.8rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; border: 1px solid rgba(225, 29, 72, 0.3); }
+        .page-hero h1 { font-size: clamp(2.5rem, 6vw, 4rem); margin: 15px 0 25px; font-weight: 800; letter-spacing: -1px; background: linear-gradient(135deg, #fff 0%, #e5e5e5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .page-hero .hero-tagline { color: rgba(255,255,255,0.85); font-size: 1.25rem; max-width: 600px; margin: 0 auto; line-height: 1.7; font-weight: 400; }
+        
+        .breadcrumb { background: linear-gradient(90deg, #FAFAF9 0%, #f0f0f0 100%); padding: 18px 0; font-size: 0.9rem; border-bottom: 1px solid var(--border-light); }
+        .breadcrumb a { color: var(--text-muted); text-decoration: none; transition: color 0.3s; }
+        .breadcrumb a:hover { color: #E11D48; }
+        .breadcrumb span { color: #E11D48; margin: 0 8px; font-weight: 500; }
+        
+        .section-header { text-align: center; margin-bottom: 50px; }
+        .section-header .section-label { display: inline-block; background: var(--accent-light); color: var(--accent); padding: 8px 18px; border-radius: 50px; font-size: 0.75rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; }
+        .section-header h2 { font-size: 2.5rem; color: var(--text-main); margin-bottom: 15px; font-weight: 700; }
+        .section-header .section-desc { color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+        
+        .about-section { padding: 100px 0; position: relative; }
+        .about-section:nth-child(odd) { background: var(--white); }
         .about-section:nth-child(even) { background: var(--bg-light); }
-        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
-        .about-grid h2 { font-size: 2rem; margin-bottom: 20px; }
-        .about-grid p { color: var(--text-muted); margin-bottom: 15px; line-height: 1.8; }
-        .about-img { width: 100%; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
-        .mission-box { text-align: center; max-width: 700px; margin: 0 auto; }
-        .mission-box p { font-size: 1.3rem; line-height: 1.8; color: var(--text-muted); }
-        .founder-section { display: grid; grid-template-columns: 1fr 1.2fr; gap: 50px; align-items: center; }
-        .founder-label { text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; color: var(--accent); font-weight: 600; margin-bottom: 10px; }
-        .founder-name { font-size: 2.2rem; margin-bottom: 20px; }
-        .values-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-        .value-card { background: var(--white); padding: 30px; border-radius: 16px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
-        .value-card i { color: var(--accent); margin-bottom: 15px; }
-        .value-card h4 { margin-bottom: 10px; }
-        .value-card p { font-size: 0.9rem; color: var(--text-muted); }
-        .cta-section { background: var(--primary); color: white; padding: 60px 0; text-align: center; }
-        .cta-section h2 { font-size: 2rem; margin-bottom: 15px; }
-        .cta-section p { opacity: 0.7; margin-bottom: 25px; }
-        .footer { background: var(--bg-light); padding: 50px 0 20px; border-top: 1px solid var(--border-light); }
-        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
-        .footer h4 { font-size: 1rem; margin-bottom: 20px; color: var(--text-main); text-transform: uppercase; letter-spacing: 1px; }
+        .about-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--border-light), transparent); }
+        
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+        .about-grid .content h2 { font-size: 2.2rem; margin-bottom: 25px; color: var(--text-main); font-weight: 700; position: relative; padding-bottom: 20px; }
+        .about-grid .content h2::after { content: ''; position: absolute; bottom: 0; left: 0; width: 60px; height: 4px; background: var(--accent); border-radius: 2px; }
+        .about-grid .content p { color: var(--text-muted); margin-bottom: 20px; line-height: 1.8; font-size: 1.05rem; }
+        .about-grid .content .highlight-box { background: var(--accent-light); padding: 25px; border-radius: 12px; border-left: 4px solid var(--accent); margin-top: 25px; }
+        .about-grid .content .highlight-box p { margin-bottom: 0; color: var(--text-main); font-weight: 500; }
+        .about-img-wrapper { position: relative; }
+        .about-img { width: 100%; border-radius: 20px; box-shadow: 0 25px 50px rgba(0,0,0,0.15); }
+        .about-img-wrapper::before { content: ''; position: absolute; top: -20px; left: -20px; right: 20px; bottom: 20px; border: 3px solid var(--accent); border-radius: 20px; z-index: -1; }
+        
+        .founder-section { display: grid; grid-template-columns: 1fr 1.3fr; gap: 60px; align-items: center; }
+        .founder-img-wrapper { position: relative; }
+        .founder-img-wrapper .founder-img { width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .founder-img-wrapper .founder-badge { position: absolute; bottom: -15px; right: -15px; background: var(--accent); color: white; padding: 20px 25px; border-radius: 12px; text-align: center; box-shadow: 0 10px 30px rgba(225, 29, 72, 0.4); }
+        .founder-img-wrapper .founder-badge span { display: block; font-size: 0.75rem; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px; }
+        .founder-img-wrapper .founder-badge strong { font-size: 1.2rem; display: block; }
+        .founder-content .founder-label { display: inline-block; background: var(--accent-light); color: var(--accent); padding: 8px 16px; border-radius: 50px; font-size: 0.75rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; }
+        .founder-content h3 { font-size: 2.4rem; margin-bottom: 20px; color: var(--text-main); font-weight: 700; }
+        .founder-content p { color: var(--text-muted); margin-bottom: 15px; line-height: 1.8; font-size: 1.05rem; }
+        .founder-content .linkedin-btn { display: inline-flex; align-items: center; gap: 8px; margin-top: 10px; }
+        
+        .mission-section { text-align: center; padding: 80px 40px; background: linear-gradient(135deg, var(--primary) 0%, #2a2a2a 100%); border-radius: 24px; margin: 20px 60px; position: relative; overflow: hidden; }
+        .mission-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V9h-2v11.5l-7.5 4.5 2 3.5 9.5-5.5v11h2v-11l9.5 5.5 2-3.5-7.5-4.5z' fill='%23E11D48' fill-opacity='0.1'/%3E%3C/svg%3E"); }
+        .mission-section .mission-content { position: relative; z-index: 1; }
+        .mission-section h2 { font-size: 2rem; color: white; margin-bottom: 20px; font-weight: 700; }
+        .mission-section p { color: rgba(255,255,255,0.85); font-size: 1.2rem; max-width: 700px; margin: 0 auto; line-height: 1.8; }
+        
+        .values-section { padding: 100px 0; background: var(--white); }
+        .values-section .section-header { margin-bottom: 60px; }
+        .values-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+        .value-card { background: var(--white); padding: 40px 30px; border-radius: 20px; text-align: center; box-shadow: 0 10px 40px rgba(0,0,0,0.06); border: 1px solid var(--border-light); transition: all 0.4s ease; position: relative; overflow: hidden; }
+        .value-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--accent), #f43f5e); transform: scaleX(0); transition: transform 0.4s ease; }
+        .value-card:hover { transform: translateY(-10px); box-shadow: 0 20px 50px rgba(0,0,0,0.1); }
+        .value-card:hover::before { transform: scaleX(1); }
+        .value-card .icon-wrapper { width: 70px; height: 70px; background: var(--accent-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; transition: all 0.3s; }
+        .value-card:hover .icon-wrapper { background: var(--accent); }
+        .value-card:hover .icon-wrapper i { color: white !important; }
+        .value-card i { color: var(--accent); transition: color 0.3s; }
+        .value-card h4 { font-size: 1.2rem; margin-bottom: 12px; color: var(--text-main); font-weight: 600; }
+        .value-card p { font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; }
+        
+        .stats-section { background: linear-gradient(135deg, var(--accent) 0%, #f43f5e 100%); padding: 60px 0; }
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; text-align: center; }
+        .stat-item { color: white; }
+        .stat-item .stat-number { font-size: 3rem; font-weight: 800; display: block; margin-bottom: 5px; }
+        .stat-item .stat-label { font-size: 0.95rem; opacity: 0.9; text-transform: uppercase; letter-spacing: 1px; }
+        
+        .cta-section { background: var(--primary); color: white; padding: 80px 0; text-align: center; position: relative; overflow: hidden; }
+        .cta-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 30% 50%, rgba(225, 29, 72, 0.2) 0%, transparent 50%); }
+        .cta-section .container { position: relative; z-index: 1; }
+        .cta-section h2 { font-size: 2.5rem; margin-bottom: 20px; font-weight: 700; }
+        .cta-section p { opacity: 0.8; margin-bottom: 30px; font-size: 1.15rem; }
+        
+        .footer { background: var(--bg-light); padding: 60px 0 20px; border-top: 1px solid var(--border-light); }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 50px; margin-bottom: 50px; }
+        .footer h4 { font-size: 1rem; margin-bottom: 25px; color: var(--text-main); text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
         .footer ul { list-style: none; }
-        .footer li { margin-bottom: 12px; }
-        .footer a { color: var(--text-muted); text-decoration: none; font-size: 0.95rem; }
+        .footer li { margin-bottom: 14px; }
+        .footer a { color: var(--text-muted); text-decoration: none; font-size: 0.95rem; transition: color 0.3s; }
         .footer a:hover { color: var(--accent); }
-        .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid var(--border-light); color: var(--text-muted); font-size: 0.9rem; }
-        @media (max-width: 1024px) { .footer-grid { grid-template-columns: 1fr 1fr; } .values-grid { grid-template-columns: 1fr 1fr; } }
+        .footer-bottom { text-align: center; padding-top: 25px; border-top: 1px solid var(--border-light); color: var(--text-muted); font-size: 0.9rem; }
+        
+        @media (max-width: 1024px) {
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+            .values-grid { grid-template-columns: repeat(2, 1fr); }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+            .mission-section { margin: 20px 30px; padding: 60px 30px; }
+        }
         @media (max-width: 768px) {
             .nav-links { display: none; }
             .mobile-toggle { display: block; }
             .footer-grid { grid-template-columns: 1fr; gap: 30px; }
-            .about-grid { grid-template-columns: 1fr; gap: 30px; }
-            .founder-section { grid-template-columns: 1fr; gap: 30px; }
+            .about-grid { grid-template-columns: 1fr; gap: 40px; }
+            .founder-section { grid-template-columns: 1fr; gap: 40px; }
             .values-grid { grid-template-columns: 1fr; }
-            .about-img { max-width: 100%; }
-            .page-hero { padding: 60px 0; }
+            .stats-grid { grid-template-columns: 1fr 1fr; }
+            .mission-section { margin: 20px; padding: 50px 25px; }
+            .page-hero { padding: 70px 0; }
+            .about-section { padding: 60px 0; }
+            .founder-img-wrapper .founder-badge { position: static; margin-top: 20px; display: inline-block; }
         }
     </style>
 </head>
@@ -88,7 +148,7 @@
 <body>
     <header class="header">
         <div class="container header-inner">
-            <a href="index.html"><img src="images/logo2.png" alt="Studios By Ritumbhara" class="logo-img"></a>
+            <a href="index.html"><img src="images/logo2.png" alt="LILACMOSAIC TECHNOLOGIES PRIVATE LIMITED" class="logo-img"></a>
             <ul class="nav-links">
                 <li><a href="index.html#listings">Stays</a></li>
                 <li><a href="index.html#why-us">About</a></li>
@@ -103,9 +163,9 @@
     <main>
         <section class="page-hero">
             <div class="container">
-                <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem;">About Us</p>
+                <span class="hero-tag">About Us</span>
                 <h1>Our Story</h1>
-                <p>Redefining short-term stays in Rajasthan.</p>
+                <p class="hero-tagline">Redefining short-term stays in Rajasthan with premium studio living experiences.</p>
             </div>
         </section>
 
@@ -118,14 +178,17 @@
         <section class="about-section">
             <div class="container">
                 <div class="about-grid">
-                    <div>
+                    <div class="content">
                         <h2>Who We Are</h2>
-                        <p>Studios By Ritumbhara offers comfortable and premium stay experiences designed for convenience and relaxation.</p>
+                        <p>LILACMOSAIC TECHNOLOGIES PRIVATE LIMITED offers comfortable and premium stay experiences designed for convenience and relaxation.</p>
                         <p>Located in Rajasthan, we aim to provide quality service and a seamless booking experience for our guests.</p>
                         <p>Today, we manage multiple properties across Jaipur and Alwar, serving travelers with professional hospitality and comfortable accommodations.</p>
+                        <div class="highlight-box">
+                            <p>Managing 50+ premium studio apartments across Rajasthan</p>
+                        </div>
                     </div>
-                    <div>
-                        <img src="images/logo2.png" alt="Studios By Ritumbhara" class="about-img" style="max-width:350px;">
+                    <div class="about-img-wrapper">
+                        <img src="images/logo2.png" alt="LILACMOSAIC TECHNOLOGIES PRIVATE LIMITED" class="about-img">
                     </div>
                 </div>
             </div>
@@ -134,15 +197,21 @@
         <section class="about-section">
             <div class="container">
                 <div class="founder-section">
-                    <div>
-                        <img src="images/founder-image.png" alt="Shivam Lohiya - Founder" class="about-img">
+                    <div class="founder-img-wrapper">
+                        <img src="images/founder-image.png" alt="Shivam Lohiya - Founder" class="founder-img">
+                        <div class="founder-badge">
+                            <span>Experience</span>
+                            <strong>8+ Years</strong>
+                        </div>
                     </div>
-                    <div>
+                    <div class="founder-content">
                         <span class="founder-label">Founder</span>
-                        <h2 class="founder-name">Shivam Lohiya</h2>
+                        <h3>Shivam Lohiya</h3>
                         <p>The visionary behind Studios By Ritumbhara. With a passion for hospitality and real estate, Shivam has transformed how guests experience short-term stays in Rajasthan.</p>
                         <p>His mission is simple: provide travelers with immaculate spaces that feel like home — only better. Every property under our management reflects his commitment to quality, cleanliness, and guest experience.</p>
-                        <a href="https://www.linkedin.com/in/shivamlohiya" target="_blank" class="btn btn-primary" style="margin-top:20px;">Connect on LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/shivamlohiya" target="_blank" class="btn btn-primary linkedin-btn">
+                            <i data-lucide="linkedin" size="18"></i> Connect on LinkedIn
+                        </a>
                     </div>
                 </div>
             </div>
@@ -150,9 +219,11 @@
 
         <section class="about-section">
             <div class="container">
-                <div class="mission-box">
-                    <h2>Our Mission</h2>
-                    <p>To provide travelers with professionally managed, fully furnished studio spaces that offer the comfort of home with the consistency of hotel standards — making every stay memorable.</p>
+                <div class="mission-section">
+                    <div class="mission-content">
+                        <h2>Our Mission</h2>
+                        <p>To provide travelers with professionally managed, fully furnished studio spaces that offer the comfort of home with the consistency of hotel standards — making every stay memorable.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -198,7 +269,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <img src="images/logo2.png" alt="Studios By Ritumbhara" style="width:80px; margin-bottom:15px;">
+                    <img src="images/logo2.png" alt="LILACMOSAIC TECHNOLOGIES PRIVATE LIMITED" style="width:80px; margin-bottom:15px;">
                     <p style="color:var(--text-muted);line-height:1.7;">Premium studio stays in Jaipur. Professionally managed, fully furnished, always 5-star ready.</p>
                 </div>
                 <div>
@@ -230,7 +301,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Studios By Ritumbhara. All Rights Reserved.</p>
+                <p>&copy; 2026 LILACMOSAIC TECHNOLOGIES PRIVATE LIMITED. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
